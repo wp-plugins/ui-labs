@@ -1,0 +1,74 @@
+/*------------------------------------------------------------------------------
+
+
+Hello, this is the main WordPress admin CSS file.
+All the important stuff is in here.
+
+
+TABLE OF CONTENTS:
+------------------
+ 1.0 - Post Statuses
+
+
+------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------------------
+  1.0 - Post Statuses
+------------------------------------------------------------------------------*/
+
+/* Pending */
+.status-pending .post-state {
+	padding:2px 5px;
+	color:#000;
+	font-size:9px;
+	font-weight:bold;
+	text-shadow:rgba(255,255,255,0.7) 0 1px 0;
+	background:#dba811;
+	background:-moz-linear-gradient(bottom,  #dba811,  #efcb3b);
+	background:-webkit-gradient(linear, left bottom, left top, from(#dba811), to(#efcb3b));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #dba811 inset, -1px 0 0 #dba811 inset, 0 1px 0 #dba811 inset, 0 -1px 0 #dba811 inset;
+	-webkit-box-shadow:1px 0 0 #dba811 inset, -1px 0 0 #dba811 inset, 0 1px 0 #dba811 inset, 0 -1px 0 #dba811 inset;
+	-moz-box-shadow:1px 0 0 #dba811 inset, -1px 0 0 #dba811 inset, 0 1px 0 #dba811 inset, 0 -1px 0 #dba811 inset;
+}
+
+/* Draft */
+.status-draft .post-state {
+	padding:2px 5px;
+	color:#fff;
+	font-size:9px;
+	font-weight:normal;
+	text-shadow:rgba(0,0,0,0.7) 0 -1px 0;
+	background:#870804;
+	background:-moz-linear-gradient(bottom,  #870804,  #c10c05);
+	background:-webkit-gradient(linear, left bottom, left top, from(#870804), to(#c10c05));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #870804 inset, -1px 0 0 #870804 inset, 0 1px 0 #870804 inset, 0 -1px 0 #870804 inset;
+	-webkit-box-shadow:1px 0 0 #870804 inset, -1px 0 0 #870804 inset, 0 1px 0 #870804 inset, 0 -1px 0 #870804 inset;
+	-moz-box-shadow:1px 0 0 #870804 inset, -1px 0 0 #870804 inset, 0 1px 0 #870804 inset, 0 -1px 0 #870804 inset;
+}
+
+/* Sticky */
+.status-publish .post-state {
+	padding:2px 5px;
+	color:#fff;
+	font-size:9px;
+	font-weight:normal;
+	text-shadow:rgba(0,0,0,0.7) 0 -1px 0;
+	background:#277fac;
+	background:-moz-linear-gradient(bottom,  #277fac,  #3db0eb);
+	background:-webkit-gradient(linear, left bottom, left top, from(#277fac), to(#3db0eb));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
+	-webkit-box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
+	-moz-box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
+}
