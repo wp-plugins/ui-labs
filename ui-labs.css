@@ -14,18 +14,17 @@ TABLE OF CONTENTS:
 
 
 
-
 /*------------------------------------------------------------------------------
   1.0 - Post Statuses
 ------------------------------------------------------------------------------*/
 
 /* Pending */
-.status-pending .post-state {
+.post-state .pending {
 	padding:2px 5px;
 	color:#000;
 	font-size:9px;
 	font-weight:bold;
-	text-shadow:rgba(255,255,255,0.7) 0 1px 0;
+	text-shadow:rgba(255,255,255,0.6) 0 1px 0;
 	background:#dba811;
 	background:-moz-linear-gradient(bottom,  #dba811,  #efcb3b);
 	background:-webkit-gradient(linear, left bottom, left top, from(#dba811), to(#efcb3b));
@@ -38,7 +37,7 @@ TABLE OF CONTENTS:
 }
 
 /* Draft */
-.status-draft .post-state {
+.post-state .draft {
 	padding:2px 5px;
 	color:#fff;
 	font-size:9px;
@@ -56,7 +55,7 @@ TABLE OF CONTENTS:
 }
 
 /* Sticky */
-.status-publish .post-state {
+.post-state .sticky {
 	padding:2px 5px;
 	color:#fff;
 	font-size:9px;
@@ -72,3 +71,66 @@ TABLE OF CONTENTS:
 	-webkit-box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
 	-moz-box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
 }
+
+/* Private */
+.post-state .private {
+	padding:2px 5px;
+	color:#000;
+	font-size:9px;
+	font-weight:bold;
+	text-shadow:rgba(255,255,255,1) 0 1px 0;
+	background:#ddd;
+	background:-moz-linear-gradient(bottom,  #ddd,  #fff);
+	background:-webkit-gradient(linear, left bottom, left top, from(#ddd), to(#fff));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #ccc inset, -1px 0 0 #ccc inset, 0 1px 0 #ccc inset, 0 -1px 0 #ccc inset;
+	-webkit-box-shadow:1px 0 0 #bbb inset, -1px 0 0 #bbb inset, 0 1px 0 #bbb inset, 0 -1px 0 #bbb inset;
+	-moz-box-shadow:1px 0 0 #ccc inset, -1px 0 0 #ccc inset, 0 1px 0 #ccc inset, 0 -1px 0 #ccc inset;
+}
+
+/* Password Protected */
+.post-state .password-protected {
+	padding:2px 5px;
+	color:#fff;
+	font-size:9px;
+	font-weight:normal;
+	text-shadow:rgba(0,0,0,1) 0 -1px 0;
+	background:#222;
+	background:-moz-linear-gradient(bottom,  #222,  #333);
+	background:-webkit-gradient(linear, left bottom, left top, from(#222), to(#555));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
+	-webkit-box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
+	-moz-box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
+}
+
+/* Make the comma between multiple post 
+statuses invisible - hackfest - #WINNING */
+.post-state {
+	color:#fff;
+}
+
+/* Make the hyphen before all post statuses 
+invisible - #TIGERBLOOD */
+.status-pending strong,
+.status-publish strong,
+.status-private strong,
+.status-draft strong {
+	color:#fff;
+}
+
+/* Remove excess space now that the hyphen 
+is invisible - #SOMETHING */
+.status-pending .row-title,
+.status-publish .row-title,
+.status-private .row-title,
+.status-draft .row-title {
+	margin-right:-10px;
+	position:relative;
+	z-index:10;
+}
+
