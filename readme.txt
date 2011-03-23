@@ -15,7 +15,7 @@ UI Labs is a plugin that offers experimental WordPress admin UI features with th
 
 = Features =
 
-1. Colour-Coded Post Statuses (See screenshots)
+1. Colour-Coded Post Statuses - Ever had a page full of posts which were a mix of drafts, stickied posts, pending posts, and private posts? When you have a lot of different post statuses, it's hard to differentiate them all. Experiment #1 applies colour-coding to post statuses to make different types of posts easy to pick out with just a glance.
 
 
 == Installation ==
@@ -29,15 +29,17 @@ You can either install it automatically from the WordPress admin, or do it manua
 = Usage =
 
 1. Activate
-2. Enjoy!
+2. Enjoy
+3. ???
+4. PROFIT!
 
 
 == Screenshots ==
 
-1. Colour-Coded Post Statuses
+1. Experiment #1 - Colour-Coded Post Statuses
 
 
 == Changelog ==
 
 = 1.0 (2011-03-23) =
-* new: The first experiment! Colour-Coded Posts Statuses, making it easier to pick out Sticky, Pending, and Draft posts from the edit-posts screen. Mmmmmm shiny.
+* New: The first experiment! Colour-Coded Posts Statuses, making it easier to pick out Sticky, Pending, and Draft posts from the edit-posts screen. Mmmmmm shiny.
