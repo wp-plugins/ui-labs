@@ -20,6 +20,8 @@ TABLE OF CONTENTS:
 
 /* Pending */
 .post-state .pending {
+	position:relative;
+	top:-1px;
 	padding:2px 5px;
 	color:#000;
 	font-size:9px;
@@ -38,6 +40,8 @@ TABLE OF CONTENTS:
 
 /* Draft */
 .post-state .draft {
+	position:relative;
+	top:-1px;
 	padding:2px 5px;
 	color:#fff;
 	font-size:9px;
@@ -56,6 +60,8 @@ TABLE OF CONTENTS:
 
 /* Sticky */
 .post-state .sticky {
+	position:relative;
+	top:-1px;
 	padding:2px 5px;
 	color:#fff;
 	font-size:9px;
@@ -74,6 +80,8 @@ TABLE OF CONTENTS:
 
 /* Private */
 .post-state .private {
+	position:relative;
+	top:-1px;
 	padding:2px 5px;
 	color:#000;
 	font-size:9px;
@@ -92,6 +100,8 @@ TABLE OF CONTENTS:
 
 /* Password Protected */
 .post-state .password-protected {
+	position:relative;
+	top:-1px;
 	padding:2px 5px;
 	color:#fff;
 	font-size:9px;
@@ -106,12 +116,6 @@ TABLE OF CONTENTS:
 	box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
 	-webkit-box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
 	-moz-box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
-}
-
-/* Make the comma between multiple post 
-statuses invisible - hackfest - #WINNING */
-.post-state {
-	color:#fff;
 }
 
 /* Make the hyphen before all post statuses 
@@ -129,8 +133,11 @@ is invisible - #SOMETHING */
 .status-publish .row-title,
 .status-private .row-title,
 .status-draft .row-title {
-	margin-right:-10px;
+	margin-right:-4px;
 	position:relative;
 	z-index:10;
 }
+
+/* Fix ugly alignment bug introduced in WP3.2 */
+.widefat td {padding-top:6px;padding-bottom:6px;}
 

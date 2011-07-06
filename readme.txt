@@ -2,8 +2,8 @@
 Contributors: John O'Nolan
 Tags: ui, admin design, experimental
 Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 1.0.1
+Tested up to: 3.2
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 Experimental WordPress admin UI features, shiny ones.
@@ -42,6 +42,11 @@ You can either install it automatically from the WordPress admin, or do it manua
 
 
 == Changelog ==
+
+= 1.0.2 (2011-07-06) =
+* New: WordPress 3.2 compatibility
+* Fixed: Bug where there was no margin between post status labels and post titles.
+* Fixed: Bug where "Header image" labels were being made invisible on the Media management page.
 
 = 1.0.1 (2011-03-23) =
 * New: Support for Private and Password protected post statuses.
