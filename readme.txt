@@ -1,9 +1,9 @@
 === UI Labs ===
 Contributors: John O'Nolan
 Tags: ui, admin design, experimental
-Requires at least: 3.0
-Tested up to: 3.2
-Stable tag: 1.0.2
+Requires at least: 3.2
+Tested up to: 3.2.1
+Stable tag: 1.1
 License: GPLv2 or later 
 
 Experimental WordPress admin UI features, shiny ones.
@@ -15,9 +15,14 @@ UI Labs is a plugin that offers experimental WordPress admin UI features with th
 
 These are unofficial core UI experiments - who knows what could happen?
 
+
 = Features =
 
 1. Colour-Coded Post Statuses - Ever had a page full of posts which were a mix of drafts, stickied posts, pending posts, and private posts? When you have a lot of different post statuses, it's hard to differentiate them all. Experiment #1 applies colour-coding to post statuses to make different types of posts easy to pick out with just a glance.
+
+2. New 3.2 Admin Header - The new header in WordPress 3.2 can sometimes make things feel a little cluttered. UI Labs experiment number two brings back a more traditional WordPress header to the main content area, and adds a little padding to the main content area to make everything feel a little more spacious.
+
+Each experiment can be turned on and off from the plugin settings screen.
 
 
 == Installation ==
@@ -39,9 +44,14 @@ You can either install it automatically from the WordPress admin, or do it manua
 == Screenshots ==
 
 1. Experiment #1 - Colour-Coded Post Statuses
+2. Experiment #2 - New 3.2 Admin Header
 
 
 == Changelog ==
+
+= 1.1 (2011-07-15) =
+* New: The second UI Labs experiment, brings back a more traditional WordPress admin header. WARNING: Minimum version for this plugin is now WordPress 3.2.
+* NEW: Settings screen to enable/disable individual experiments. Special thanks to Ollie Read for this.
 
 = 1.0.2 (2011-07-06) =
 * New: WordPress 3.2 compatibility

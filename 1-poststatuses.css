@@ -1,0 +1,142 @@
+/*------------------------------------------------------------------------------
+
+
+Hello, this is the main UI Labs CSS File
+Crazy experiments and stuff happen in here
+
+
+TABLE OF CONTENTS:
+------------------
+ 1.0 - Post Statuses
+
+
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+  1.0 - Post Statuses
+------------------------------------------------------------------------------*/
+
+/* Pending */
+.post-state .pending {
+	position:relative;
+	top:-1px;
+	padding:2px 5px;
+	color:#000;
+	font-size:9px;
+	font-weight:bold;
+	text-shadow:rgba(255,255,255,0.6) 0 1px 0;
+	background:#dba811;
+	background:-moz-linear-gradient(bottom,  #dba811,  #efcb3b);
+	background:-webkit-gradient(linear, left bottom, left top, from(#dba811), to(#efcb3b));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #dba811 inset, -1px 0 0 #dba811 inset, 0 1px 0 #dba811 inset, 0 -1px 0 #dba811 inset;
+	-webkit-box-shadow:1px 0 0 #dba811 inset, -1px 0 0 #dba811 inset, 0 1px 0 #dba811 inset, 0 -1px 0 #dba811 inset;
+	-moz-box-shadow:1px 0 0 #dba811 inset, -1px 0 0 #dba811 inset, 0 1px 0 #dba811 inset, 0 -1px 0 #dba811 inset;
+}
+
+/* Draft */
+.post-state .draft {
+	position:relative;
+	top:-1px;
+	padding:2px 5px;
+	color:#fff;
+	font-size:9px;
+	font-weight:normal;
+	text-shadow:rgba(0,0,0,0.7) 0 -1px 0;
+	background:#870804;
+	background:-moz-linear-gradient(bottom,  #870804,  #c10c05);
+	background:-webkit-gradient(linear, left bottom, left top, from(#870804), to(#c10c05));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #870804 inset, -1px 0 0 #870804 inset, 0 1px 0 #870804 inset, 0 -1px 0 #870804 inset;
+	-webkit-box-shadow:1px 0 0 #870804 inset, -1px 0 0 #870804 inset, 0 1px 0 #870804 inset, 0 -1px 0 #870804 inset;
+	-moz-box-shadow:1px 0 0 #870804 inset, -1px 0 0 #870804 inset, 0 1px 0 #870804 inset, 0 -1px 0 #870804 inset;
+}
+
+/* Sticky */
+.post-state .sticky {
+	position:relative;
+	top:-1px;
+	padding:2px 5px;
+	color:#fff;
+	font-size:9px;
+	font-weight:normal;
+	text-shadow:rgba(0,0,0,0.7) 0 -1px 0;
+	background:#277fac;
+	background:-moz-linear-gradient(bottom,  #277fac,  #3db0eb);
+	background:-webkit-gradient(linear, left bottom, left top, from(#277fac), to(#3db0eb));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
+	-webkit-box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
+	-moz-box-shadow:1px 0 0 #277fac inset, -1px 0 0 #277fac inset, 0 1px 0 #277fac inset, 0 -1px 0 #277fac inset;
+}
+
+/* Private */
+.post-state .private {
+	position:relative;
+	top:-1px;
+	padding:2px 5px;
+	color:#000;
+	font-size:9px;
+	font-weight:bold;
+	text-shadow:rgba(255,255,255,1) 0 1px 0;
+	background:#ddd;
+	background:-moz-linear-gradient(bottom,  #ddd,  #fff);
+	background:-webkit-gradient(linear, left bottom, left top, from(#ddd), to(#fff));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #ccc inset, -1px 0 0 #ccc inset, 0 1px 0 #ccc inset, 0 -1px 0 #ccc inset;
+	-webkit-box-shadow:1px 0 0 #bbb inset, -1px 0 0 #bbb inset, 0 1px 0 #bbb inset, 0 -1px 0 #bbb inset;
+	-moz-box-shadow:1px 0 0 #ccc inset, -1px 0 0 #ccc inset, 0 1px 0 #ccc inset, 0 -1px 0 #ccc inset;
+}
+
+/* Password Protected */
+.post-state .password-protected {
+	position:relative;
+	top:-1px;
+	padding:2px 5px;
+	color:#fff;
+	font-size:9px;
+	font-weight:normal;
+	text-shadow:rgba(0,0,0,1) 0 -1px 0;
+	background:#222;
+	background:-moz-linear-gradient(bottom,  #222,  #333);
+	background:-webkit-gradient(linear, left bottom, left top, from(#222), to(#555));
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
+	-webkit-box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
+	-moz-box-shadow:1px 0 0 #222 inset, -1px 0 0 #222 inset, 0 1px 0 #222 inset, 0 -1px 0 #222 inset;
+}
+
+/* Make the hyphen before all post statuses 
+invisible - #TIGERBLOOD */
+.status-pending strong,
+.status-publish strong,
+.status-private strong,
+.status-draft strong {
+	color:#fff;
+}
+
+/* Remove excess space now that the hyphen 
+is invisible - #SOMETHING */
+.status-pending .row-title,
+.status-publish .row-title,
+.status-private .row-title,
+.status-draft .row-title {
+	margin-right:-4px;
+	position:relative;
+	z-index:10;
+}
+
+/* Fix ugly alignment bug introduced in WP3.2 */
+.widefat td {padding-top:6px;padding-bottom:6px;}

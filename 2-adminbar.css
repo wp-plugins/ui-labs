@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------------------
+  2.0 - New Admin Header
+------------------------------------------------------------------------------*/
+
+#adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+	background:none;
+}
+#adminmenu .wp-menu-arrow div {
+	background:url(images/menu-arrow-frame.png) top right no-repeat;
+}
+#adminmenu li:nth-child(2).wp-menu-separator {
+	display:none;
+}
+
+#wpcontent {
+	margin-left:146px;
+}
+
+#wpbody {
+	margin-left:14px;
+}
+
+.wp-admin.index-php #wpbody-content .wrap {padding-right:0px;}
+.wp-admin.index-php #dashboard-widgets .meta-box-sortables {margin-right:0;}
+
+#wpbody-content .wrap {padding:15px 18px;}
+#wpbody-content .wrap h2 {margin-bottom:5px;}
+
+#wphead {
+	height:29px;
+	border-bottom:#DFDFDF 1px solid;
+	margin-right:0;
+	margin-left:0;
+	padding-left:34px;
+	padding-right:30px;
+	background:#f1f1f1;
+	background:-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
+	background:-ms-linear-gradient(top,#F9F9F9,#ECECEC);
+	background:-moz-linear-gradient(top,#F9F9F9,#ECECEC);
+	background:linear-gradient(top,#F9F9F9,#ECECEC);
+	box-shadow:0 1px 0 #fff inset;
+	-webkit-box-shadow:0 1px 0 #fff inset;
+	-moz-box-shadow:0 1px 0 #fff inset;
+}
+
+#wphead h1 {font-size:14px;line-height:18px;}
+
+#screen-meta {margin-right:14px;}

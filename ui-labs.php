@@ -4,7 +4,7 @@ Plugin Name: UI Labs
 Plugin URI: 
 Description: Experimental WordPress admin UI features, ooo shiny!
 Author: John O'Nolan
-Version: 1.0.2
+Version: 1.1
 Author URI: http://john.onolan.org
 */
 
@@ -24,20 +24,46 @@ function labs_display_post_states( $post_states ) {
 
 add_filter( 'display_post_states', 'labs_display_post_states' );
 
-/**
- * Add CSS file link
- *
- * Based on the WP Admin Theme plugin by David Smith
- *
- * @since 1.0
- */
-function ui_labs_css() {
-	$url = plugins_url('/ui-labs.css', __FILE__);
-    echo '
-    <link rel="stylesheet" type="text/css" href="' . $url . '" />
-    ';
+// pure ollie genius starts here --
+
+function ui_labs_init() {
+	ui_labs_register_settings();
+	if(get_option('poststatuses') == 'yes') {
+		wp_register_style('ui-labs-poststatuses', plugins_url('/ui-labs/1-poststatuses.css'), false, '9001');
+		wp_enqueue_style('ui-labs-poststatuses');
+	}
+	if(get_option('adminbar') == 'yes') {
+		wp_register_style('ui-labs-adminbar', plugins_url('/ui-labs/2-adminbar.css'), false, '9001');
+		wp_enqueue_style('ui-labs-adminbar');
+	}
 }
 
-add_action('admin_head','ui_labs_css', 1000);
+function ui_labs_settings() {
+	add_options_page('UI Labs', 'UI Labs', 'manage_options', 'ui-labs-settings', 'ui_labs_settings_page');
+}
 
+function ui_labs_register_settings() {
+	register_setting('ui-labs', 'poststatuses');
+	register_setting('ui-labs', 'adminbar');
+}
+
+function ui_labs_settings_page() { require_once('settings.php'); }
+
+function ui_labs_activation() {
+	ui_labs_register_settings();
+	update_option('ui-poststatuses', 'yes');
+	update_option('ui-adminbar', 'yes');
+}
+
+if(is_admin()) {
+	add_action('admin_init', 'ui_labs_init');
+	add_action('admin_menu', 'ui_labs_settings');
+}
+
+register_activation_hook(__FILE__, 'ui_labs_activation');
+
+// pure ollie genius ends here --
+
+// functions within the ollie genius section were written by Ollie Read. Unless of course they break, in which
+// case John O'Nolan is responsible.
 ?>
