@@ -4,7 +4,7 @@ Plugin Name: UI Labs
 Plugin URI: 
 Description: Experimental WordPress admin UI features, ooo shiny!
 Author: John O'Nolan
-Version: 1.1
+Version: 1.1.1
 Author URI: http://john.onolan.org
 */
 

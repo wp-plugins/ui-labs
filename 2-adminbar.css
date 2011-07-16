@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------------*/
 
 #adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
-	background:none;
+	background:none!important;
 }
 #adminmenu .wp-menu-arrow div {
 	background:url(images/menu-arrow-frame.png) top right no-repeat;

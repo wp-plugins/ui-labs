@@ -1,5 +1,5 @@
 <div class="wrap">
-<h2>Mother Fucking UI Labs</h2>
+<h2>UI Labs Experiments</h2>
 
 <form method="post" action="options.php">
     <?php settings_fields('ui-labs'); ?>
