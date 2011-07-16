@@ -5,12 +5,12 @@
     <?php settings_fields('ui-labs'); ?>
     <table class="form-table">
         <tr valign="top">
-        <th scope="row">Experiment 1: Colour coded post statuses</th>
+        <th scope="row"><strong>Experiment 1:</strong> Colour-coded Post Statuses</th>
         <td><input type="checkbox" name="poststatuses" value="yes"<?=get_option('poststatuses') == 'yes' ? ' checked' : '';?> /></td>
         </tr>
          
         <tr valign="top">
-        <th scope="row">Experiment 2: Classic WordPress admin header</th>
+        <th scope="row"><strong>Experiment 2:</strong> Classic WordPress Admin Bar</th>
         <td><input type="checkbox" name="adminbar" value="yes"<?=get_option('adminbar') == 'yes' ? ' checked' : '';?> /></td>
         </tr>
     </table>
