@@ -49,5 +49,8 @@
 
 /*collapsed menu styles*/
 .js.folded #wpcontent, .js.folded #footer {
-	margin-left:34px;
+	margin-left:33px;
+}
+.js.folded #wphead {
+	height:30px;
 }
