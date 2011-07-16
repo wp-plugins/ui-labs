@@ -20,7 +20,7 @@ These are unofficial core UI experiments - who knows what could happen?
 
 1. Colour-Coded Post Statuses - Ever had a page full of posts which were a mix of drafts, stickied posts, pending posts, and private posts? When you have a lot of different post statuses, it's hard to differentiate them all. Experiment #1 applies colour-coding to post statuses to make different types of posts easy to pick out with just a glance.
 
-2. New 3.2 Admin Header - The new header in WordPress 3.2 can sometimes make things feel a little cluttered. UI Labs experiment number two brings back a more traditional WordPress header to the main content area, and adds a little padding to the main content area to make everything feel a little more spacious.
+2. New 3.2 Admin Bar - The new header in WordPress 3.2 can sometimes make things feel a little cluttered. UI Labs experiment number two brings back a more traditional WordPress header (and footer). It also adds a little padding to the main content area to make everything feel a little more spacious.
 
 Each experiment can be turned on and off from the plugin settings screen.
 
@@ -31,6 +31,8 @@ You can either install it automatically from the WordPress admin, or do it manua
 
 1. Unzip the archive and put the 'ui-labs' folder into your plugins folder (/wp-content/plugins/).
 2. Activate the plugin from the Plugins menu.
+
+Please Note: These features involve some serious hackery, and at present are not translation-friendly. Only guaranteed to work in English versions of WordPress.
 
 
 = Usage =
@@ -44,18 +46,24 @@ You can either install it automatically from the WordPress admin, or do it manua
 == Screenshots ==
 
 1. Experiment #1 - Colour-Coded Post Statuses
-2. Experiment #2 - New 3.2 Admin Header
+2. Experiment #2 - New 3.2 Admin Bar
 
 
 == Changelog ==
 
+= 1.1.2 (2011-07-) =
+* New: Experiment #1 support for Custom Post Formats with new icons.
+* New: Classic admin footer bar also added to experiment #2.
+* Fixed: Background labels made properly invisible with new WordPress 3.2 table bg colors.
+* Fixed: Display errors with new admin header when using menu in collapsed mode.
+
 = 1.1.1 (2011-07-16) =
-* Fixed: CSS big in new admin header
+* Fixed: CSS bug in new admin header
 * Fixed: Ollie swearing on the settings page. Bad Ollie.
 
 = 1.1 (2011-07-15) =
 * New: The second UI Labs experiment, brings back a more traditional WordPress admin header. WARNING: Minimum version for this plugin is now WordPress 3.2.
-* NEW: Settings screen to enable/disable individual experiments. Special thanks to Ollie Read for this.
+* New: Settings screen to enable/disable individual experiments. Special thanks to Ollie Read for this.
 
 = 1.0.2 (2011-07-06) =
 * New: WordPress 3.2 compatibility
