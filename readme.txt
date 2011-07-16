@@ -49,6 +49,10 @@ You can either install it automatically from the WordPress admin, or do it manua
 
 == Changelog ==
 
+= 1.1.1 (2011-07-16) =
+* Fixed: CSS big in new admin header
+* Fixed: Ollie swearing on the settings page. Bad Ollie.
+
 = 1.1 (2011-07-15) =
 * New: The second UI Labs experiment, brings back a more traditional WordPress admin header. WARNING: Minimum version for this plugin is now WordPress 3.2.
 * NEW: Settings screen to enable/disable individual experiments. Special thanks to Ollie Read for this.
