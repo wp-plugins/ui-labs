@@ -2,7 +2,7 @@
   2.0 - New Admin Header
 ------------------------------------------------------------------------------*/
 
-#adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+#adminmenu .wp-menu-arrow {
 	background:none!important;
 }
 #adminmenu .wp-menu-arrow div {
@@ -46,3 +46,8 @@
 #wphead h1 {font-size:14px;line-height:18px;}
 
 #screen-meta {margin-right:14px;}
+
+/*collapsed menu styles*/
+.js.folded #wpcontent, .js.folded #footer {
+	margin-left:34px;
+}
