@@ -24,8 +24,14 @@ function labs_display_post_states( $post_states ) {
 
 add_filter( 'display_post_states', 'labs_display_post_states' );
 
-// pure ollie genius starts here --
 
+/**
+ * Add custom settings page
+ *
+ * Allows experiments to be turned on/off, written by Ollie Read
+ *
+ * @since 1.1
+ */
 function ui_labs_init() {
 	ui_labs_register_settings();
 	if(get_option('poststatuses') == 'yes') {
@@ -62,8 +68,4 @@ if(is_admin()) {
 
 register_activation_hook(__FILE__, 'ui_labs_activation');
 
-// pure ollie genius ends here --
-
-// functions within the ollie genius section were written by Ollie Read. Unless of course they break, in which
-// case John O'Nolan is responsible.
 ?>
