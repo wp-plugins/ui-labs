@@ -124,7 +124,13 @@ invisible - #TIGERBLOOD */
 .status-publish strong,
 .status-private strong,
 .status-draft strong {
-	color:#fff;
+	color:#f9f9f9;
+}
+.alternate.status-pending strong,
+.alternate.status-publish strong,
+.alternate.status-private strong,
+.alternate.status-draft strong {
+	color:#fcfcfc;
 }
 
 /* Remove excess space now that the hyphen 
@@ -139,4 +145,7 @@ is invisible - #SOMETHING */
 }
 
 /* Fix ugly alignment bug introduced in WP3.2 */
-.widefat td {padding-top:6px;padding-bottom:6px;}
+.widefat td {
+	padding-top:6px;
+	padding-bottom:6px;
+}
