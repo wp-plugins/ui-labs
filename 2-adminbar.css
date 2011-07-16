@@ -36,6 +36,7 @@
 	margin-left:0;
 	padding-left:33px;
 	padding-right:30px;
+	text-shadow:#fff 0 1px 0;
 	background:#f1f1f1;
 	background:-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
 	background:-ms-linear-gradient(top,#F9F9F9,#ECECEC);
@@ -58,6 +59,7 @@
 	padding-right:34px;
 	margin-right:0;
 	border-bottom:#dfdfdf 1px solid;
+	text-shadow:#fff 0 1px 0;
 	background:#f1f1f1;
 	background:-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
 	background:-ms-linear-gradient(top,#F9F9F9,#ECECEC);
