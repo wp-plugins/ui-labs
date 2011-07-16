@@ -1,20 +1,4 @@
 /*------------------------------------------------------------------------------
-
-
-Hello, this is the main UI Labs CSS File
-Crazy experiments and stuff happen in here
-
-
-TABLE OF CONTENTS:
-------------------
- 1.0 - Post Statuses
-
-
-------------------------------------------------------------------------------*/
-
-
-
-/*------------------------------------------------------------------------------
   1.0 - Post Statuses
 ------------------------------------------------------------------------------*/
 
@@ -148,4 +132,63 @@ is invisible - #SOMETHING */
 .widefat td {
 	padding-top:6px;
 	padding-bottom:6px;
+}
+
+
+/*------------------------------------------------------------------------------
+  1.1 - Post Formats
+------------------------------------------------------------------------------*/
+
+/* Image */
+.format-image .post-state-format {
+	position:relative;
+	top:1px;
+	left:-2px;
+	padding-left:20px;
+	background:url(images/postformat-image.png) top left no-repeat;
+}
+
+/* Quote */
+.format-quote .post-state-format {
+	position:relative;
+	top:1px;
+	left:-2px;
+	padding-left:20px;
+	background:url(images/postformat-quote.png) top left no-repeat;
+}
+
+/* Aside */
+.format-aside .post-state-format {
+	position:relative;
+	top:-1px;
+	left:-2px;
+	padding-left:20px;
+	background:url(images/postformat-aside.png) top left no-repeat;
+}
+
+/* Gallery */
+.format-gallery .post-state-format {
+	position:relative;
+	top:1px;
+	left:-2px;
+	padding-left:20px;
+	background:url(images/postformat-gallery.png) top left no-repeat;
+}
+
+/* Status */
+.format-status .post-state-format {
+	position:relative;
+	top:0;
+	left:-2px;
+	padding-left:20px;
+	background:url(images/postformat-status.png) top left no-repeat;
+}
+
+/* Link */
+.format-link .post-state-format {
+	position:relative;
+	top:1px;
+	left:-2px;
+	padding-left:20px;
+	background:url(images/postformat-link.png) top left no-repeat;
 }
