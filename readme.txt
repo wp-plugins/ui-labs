@@ -51,6 +51,9 @@ Please Note: These features involve some serious hackery, and at present are not
 
 == Changelog ==
 
+= 1.1.3 (2011-x-x) =
+* Fixed: Bug where post titles were invisible for non admin users. Props RyanImel.
+
 = 1.1.2 (2011-07-20) =
 * New: Experiment #1 support for Custom Post Formats with new icons.
 * New: Classic admin footer bar also added to experiment #2.
