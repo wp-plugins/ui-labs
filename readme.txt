@@ -3,7 +3,7 @@ Contributors: John O'Nolan
 Tags: ui, admin design, experimental
 Requires at least: 3.2
 Tested up to: 3.2.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later 
 
 Experimental WordPress admin UI features, shiny ones.
