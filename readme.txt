@@ -1,5 +1,5 @@
 === UI Labs ===
-Contributors: John O'Nolan
+Contributors: JohnONolan
 Tags: ui, admin design, experimental
 Requires at least: 3.2
 Tested up to: 3.2.1
