@@ -47,9 +47,13 @@ Please Note: These features involve some serious hackery, and at present are not
 
 1. Experiment #1 - Colour-Coded Post Statuses
 2. Experiment #2 - New 3.2 Admin Bar
+3. Experiment #3 - Server Identification
 
 
 == Changelog ==
+
+= 1.2 (2011-10-xx) =
+* New: Experiment number 3, server identification colour coding. Adds a coloured bar to the top of WP admin to easily identify when you're editing dev/staging/live site.
 
 = 1.1.3 (2011-08-21) =
 * Fixed: Bug where post titles were invisible for non admin users. Props RyanImel.

@@ -4,7 +4,7 @@ Plugin Name: UI Labs
 Plugin URI: 
 Description: Experimental WordPress admin UI features, ooo shiny!
 Author: John O'Nolan
-Version: 1.1.3
+Version: 1.2
 Author URI: http://john.onolan.org
 */
 
@@ -42,6 +42,10 @@ function ui_labs_init() {
 		wp_register_style('ui-labs-adminbar', plugins_url('/ui-labs/2-adminbar.css'), false, '9001');
 		wp_enqueue_style('ui-labs-adminbar');
 	}
+	if(get_option('identify') == 'yes') {
+		wp_register_style('ui-labs-identify', plugins_url('/ui-labs/3-identify.css'), false, '9001');
+		wp_enqueue_style('ui-labs-identify');
+	}
 }
 
 function ui_labs_settings() {
@@ -51,6 +55,8 @@ function ui_labs_settings() {
 function ui_labs_register_settings() {
 	register_setting('ui-labs', 'poststatuses');
 	register_setting('ui-labs', 'adminbar');
+	register_setting('ui-labs', 'identify');
+	register_setting('ui-labs', 'servertype');
 }
 
 function ui_labs_settings_page() { require_once('settings.php'); }
@@ -67,5 +73,24 @@ if(is_admin()) {
 }
 
 register_activation_hook(__FILE__, 'ui_labs_activation');
+
+
+/**
+ * Identify Server UI Experiment
+ *
+ * Allows users to easily spot whether they are logged in
+ * to their developemnt, staging, or live server.
+ *
+ * @since 1.2
+ */
+function uilabs_admin_body_class( $classes ) {
+	if ( is_admin() && current_user_can( 'administrator' ) ) {
+		$servertype = get_option('servertype');
+		$classes .= $servertype;
+	}
+	// Return the $classes array
+	return $classes;
+}
+add_filter('admin_body_class', 'uilabs_admin_body_class');
 
 ?>
