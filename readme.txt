@@ -22,6 +22,8 @@ These are unofficial core UI experiments - who knows what could happen?
 
 2. New 3.2 Admin Bar - The new header in WordPress 3.2 can sometimes make things feel a little cluttered. UI Labs experiment number two brings back a more traditional WordPress header (and footer). It also adds a little padding to the main content area to make everything feel a little more spacious.
 
+3. Server Identification - This is a developer feature. Sometimes, when developing sites locally, deploying them to a staging server, then deploying to a live server - it can become confusing as to which WordPress admin panel you're logged into. This can have disastrous consequences if you suddenly start deleting stuff on the live server cause you thought the current tab was the staging server. This UI experiment allows you to enable colour coding for your different servers so that it's always obvious which one you're using right now. See screenshots for how this looks. This experiment is WordPress 3.2 and 3.3+ compatible.
+
 Each experiment can be turned on and off from the plugin settings screen.
 
 
@@ -52,7 +54,7 @@ Please Note: These features involve some serious hackery, and at present are not
 
 == Changelog ==
 
-= 1.2 (2011-10-xx) =
+= 1.2 (2011-10-05) =
 * New: Experiment number 3, server identification colour coding. Adds a coloured bar to the top of WP admin to easily identify when you're editing dev/staging/live site.
 
 = 1.1.3 (2011-08-21) =
