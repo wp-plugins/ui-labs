@@ -15,6 +15,8 @@ UI Labs is a plugin that offers experimental WordPress admin UI features with th
 
 These are unofficial core UI experiments - who knows what could happen?
 
+Used by popular sites like <a href="http://wpcandy.com">WP Candy</a> and <a href="http://travelllll.com">Travelllll.com</a>.
+
 
 = Features =
 
