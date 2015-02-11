@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------------------
+  2.0 - New Admin Header
+------------------------------------------------------------------------------*/
+
+#wpcontent, #footer {
+	margin-left:146px;
+}
+
+#wpbody {
+	margin-left:14px;
+}
+
+/*how about some padding?*/
+.wp-admin.index-php #wpbody-content .wrap {padding-right:0px;}
+.wp-admin.index-php #dashboard-widgets .meta-box-sortables {margin-right:0;}
+
+#wpbody-content {padding-bottom:30px;}
+#wpbody-content .wrap {padding:15px 20px 0 2px;}
+#wpbody-content .wrap h2 {margin-bottom:5px;}
+
+/*header*/
+#wpadminbar {
+	padding-left:33px;
+	padding-right:30px;
+	text-shadow:#fff 0 1px 0!important;
+}
+
+#wp-toolbar {
+    width: 95% !important;
+}
+
+/*footer*/
+#wpfooter {
+	height:14px;
+	padding-top:5px;
+	padding-left:37px;
+	padding-right:34px;
+	margin-right:0;
+	border-bottom:#dfdfdf 1px solid;
+	text-shadow:#fff 0 1px 0;
+	background:#ddd;
+}
+
+/*collapsed menu styles*/
+.js.folded #wpcontent, .js.folded #footer {
+	margin-left:33px;
+}
+.js.folded #wphead {
+	height:30px;
+}
